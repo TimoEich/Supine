@@ -1,8 +1,9 @@
 body {
+    font-family: Roboto;
     display: grid;
     height: 100vh;
     grid-template-columns: auto;
-    grid-template-rows: 0.5fr 1fr 1fr;
+    grid-template-rows: 0.3fr auto auto;
     grid-template-areas:
         "header-area"
         "main-area  "

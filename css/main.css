@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -38,18 +39,19 @@ img {
 
 li {
   display: inline-block;
-  background: #00ff00;
   text-transform: uppercase;
+  padding: 0 40px;
 }
 
 body {
+  font-family: Roboto;
   display: -ms-grid;
   display: grid;
   height: 100vh;
   -ms-grid-columns: auto;
       grid-template-columns: auto;
-  -ms-grid-rows: 0.5fr 1fr 1fr;
-      grid-template-rows: 0.5fr 1fr 1fr;
+  -ms-grid-rows: 0.3fr auto auto;
+      grid-template-rows: 0.3fr auto auto;
       grid-template-areas: "header-area" "main-area  " "footer-area";
 }
 
@@ -69,15 +71,81 @@ header {
   padding: 0 15% 0 15%;
 }
 
-.logo {
-  height: 12vh;
+.logo-nav {
+  height: 120px;
 }
 
 main {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: main-area;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.6fr 1fr;
+      grid-template-columns: 0.6fr 1fr;
+      grid-template-areas: "main-area-text main-area-logo";
   padding: 0 15% 0 15%;
+}
+
+.main-area-text {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: main-area-text;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 0.1fr;
+      grid-template-rows: 1fr 0.1fr;
+      grid-template-areas: "main-area-text-top" "main-area-text-bottom";
+}
+
+.main-area-text .main-area-text-top {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: main-area-text-top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.5rem;
+}
+
+.main-area-text .main-area-text-bottom {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main-area-text-bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-area-logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: main-area-logo;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-area-logo-style {
+  height: 400px;
 }
 
 footer {
@@ -85,5 +153,54 @@ footer {
   -ms-grid-column: 1;
   grid-area: footer-area;
   padding: 0 15% 0 15%;
+}
+
+.btn-download-navi {
+  font-family: Roboto;
+  cursor: pointer;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  border-style: none;
+  background: #5CB5E6;
+  height: 40px;
+  width: 150px;
+  border-radius: 5px;
+}
+
+.btn-download {
+  font-family: Roboto;
+  cursor: pointer;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  border-style: none;
+  background: #5CB5E6;
+  height: 50px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+.btn-patreon {
+  font-family: Roboto;
+  cursor: pointer;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  border-style: none;
+  background: #F96854;
+  height: 40px;
+  width: 150px;
+  border-radius: 5px;
+}
+
+.btn-get-started {
+  font-family: Roboto;
+  cursor: pointer;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  border-style: none;
+  border: #5CB5E6 solid 1px;
+  border-radius: 5px;
+  height: 50px;
+  width: 200px;
+  margin: 0 50px;
 }
 /*# sourceMappingURL=main.css.map */
